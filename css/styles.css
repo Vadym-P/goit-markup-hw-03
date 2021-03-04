@@ -1,0 +1,250 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+  --main-color: #212121;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --content-description: #757575;
+  --background: #f5f4fa;
+  --background-btn-hover: #188ce8;
+  --background-section: #2f303a;
+  --text-color-default: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+/* ========= COMPONENTS =========*/
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+
+.part-logo {
+  color: var(--accent-color);
+}
+
+.logo-white {
+  color: var(--white-color);
+}
+
+.second-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+/* ========= END COMPONENTS =========*/
+
+/* ========= HEADER =========*/
+.navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  color: var(--main-color);
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent-color);
+}
+
+.channel-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  color: var(--content-description);
+}
+
+.channel-link:hover,
+.channel-link:focus {
+  color: var(--accent-color);
+}
+
+.navigation-link.link.current {
+  color: var(--accent-color);
+}
+/* ========= END HEADER =========*/
+
+/* ========= HERO =========*/
+.modal-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  color: var(--white-color);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--background-btn-hover);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.hero {
+  background: var(--background-section);
+}
+/* ========= END HERO =========*/
+
+/* ========= ADVANTAGES =========*/
+.advantages-list-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-list-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--content-description);
+}
+/* ========= END ADVANTAGES =========*/
+
+/* ========= WHAT WE DO =========*/
+/* ========= END WHAT WE DO =========*/
+
+/* ========= OUR TEAM =========*/
+.team {
+  background: var(--background);
+}
+.third-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team-list-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+
+  color: var(--content-description);
+}
+/* ========= END OUR TEAM =========*/
+
+/* ========= CONTACT INFORMATION =========*/
+.contact-link-address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+}
+
+.contact-link-item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-default);
+}
+
+.contact-information {
+  background-color: var(--background-section);
+}
+/* ========= END CONTACT INFORMATION =========*/
+
+/* ========= FILTER =========*/
+.filter-works-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background: var(--background);
+}
+
+.filter-works-btn:hover,
+.filter-works-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+/* ========= END FILTER =========*/
+
+/* ========= OUR WORKS =========*/
+.works-img-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works-img-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--content-description);
+}
+/* ========= END OUR WORKS =========*/
