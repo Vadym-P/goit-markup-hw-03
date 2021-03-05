@@ -298,23 +298,19 @@ img {
 }
 
 .description-card {
-  display: block;
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 10px;
-  margin: 0 auto;
-  text-align: center;
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
 }
 
 .third-title {
   text-align: center;
-  min-width: 151px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
   color: var(--main-color);
 }
 
@@ -330,6 +326,11 @@ img {
 /* ========= END OUR TEAM =========*/
 
 /* ========= CONTACT INFORMATION =========*/
+.logo-ft {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .contact-link-address {
   font-size: 14px;
   line-height: 1.71;
@@ -356,10 +357,6 @@ img {
   background-color: var(--background-section);
 }
 
-.logo-ft {
-  display: block;
-  margin-bottom: 20px;
-}
 /* ========= END CONTACT INFORMATION =========*/
 
 /* ========= FILTER =========*/
