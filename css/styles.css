@@ -10,6 +10,7 @@
   --background-btn-hover: #188ce8;
   --background-section: #2f303a;
   --text-color-default: rgba(255, 255, 255, 0.6);
+  --second-title-mb: 50px;
 }
 
 body {
@@ -36,6 +37,7 @@ ol {
 img {
   display: block;
 }
+
 .link {
   text-decoration: none;
 }
@@ -47,6 +49,24 @@ img {
 .address {
   font-style: normal;
 }
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* ========= COMPONENTS =========*/
 .logo {
   font-family: var(--secondary-font);
@@ -55,6 +75,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--black-color);
+  margin-right: 93px;
 }
 
 .part-logo {
@@ -74,6 +95,40 @@ img {
 /* ========= END COMPONENTS =========*/
 
 /* ========= HEADER =========*/
+.main-header {
+  padding-top: 25px;
+  padding-bottom: 24px;
+}
+
+.main-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.list-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.list-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .navigation-link {
   font-weight: 500;
   font-size: 14px;
@@ -109,6 +164,10 @@ img {
 
 /* ========= HERO =========*/
 .modal-btn {
+  min-width: 200px;
+  padding: 10px 32px;
+  margin: auto;
+  display: block;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -130,21 +189,44 @@ img {
 }
 
 .main-title {
+  max-width: 696px;
   font-weight: 900;
+  margin: auto;
+  text-align: center;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 
   color: var(--white-color);
 }
 
 .hero {
   background: var(--background-section);
+  padding: 200px 452px;
 }
 /* ========= END HERO =========*/
 
 /* ========= ADVANTAGES =========*/
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.advantages-list {
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.advantages-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .advantages-list-title {
   font-weight: 700;
   font-size: 14px;
@@ -164,12 +246,55 @@ img {
 /* ========= END ADVANTAGES =========*/
 
 /* ========= WHAT WE DO =========*/
+.our-work {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.second-title {
+  text-align: center;
+  margin-bottom: var(--second-title-mb);
+}
+
+.work-list {
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.work-list-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 /* ========= END WHAT WE DO =========*/
 
 /* ========= OUR TEAM =========*/
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background: var(--background);
 }
+
+.team-list {
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.description-card {
+  background-color: #fff;
+}
+
 .third-title {
   font-weight: 500;
   font-size: 16px;
