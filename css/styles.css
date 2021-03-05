@@ -83,6 +83,7 @@ img {
 }
 
 .logo-white {
+  margin: auto;
   color: var(--white-color);
 }
 
@@ -98,6 +99,7 @@ img {
 .main-header {
   padding-top: 25px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-header .container {
@@ -166,7 +168,7 @@ img {
 .modal-btn {
   min-width: 200px;
   padding: 10px 32px;
-  margin: auto;
+  margin: 0 auto;
   display: block;
   font-family: inherit;
   font-weight: 700;
@@ -191,7 +193,7 @@ img {
 .main-title {
   max-width: 696px;
   font-weight: 900;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   font-size: 44px;
   line-height: 1.36;
@@ -205,6 +207,7 @@ img {
 .hero {
   background: var(--background-section);
   padding: 200px 452px;
+  margin: 0 auto;
 }
 /* ========= END HERO =========*/
 
@@ -289,17 +292,30 @@ img {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  box-shadow: 0px 1px 3px hsla(0, 0%, 0%, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .description-card {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  text-align: center;
   background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .third-title {
+  text-align: center;
+  min-width: 151px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: var(--main-color);
 }
 
 .team-list-description {
@@ -307,6 +323,7 @@ img {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--content-description);
 }
@@ -321,6 +338,10 @@ img {
   color: var(--white-color);
 }
 
+.contact-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .contact-link-item {
   font-size: 14px;
   line-height: 1.71;
@@ -330,7 +351,14 @@ img {
 }
 
 .contact-information {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--background-section);
+}
+
+.logo-ft {
+  display: block;
+  margin-bottom: 20px;
 }
 /* ========= END CONTACT INFORMATION =========*/
 
