@@ -343,6 +343,8 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  padding-top: 3px;
+  padding-bottom: 3px;
 
   color: var(--white-color);
 }
@@ -355,6 +357,8 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  padding-top: 3px;
+  padding-bottom: 3px;
 
   color: var(--text-color-default);
 }
